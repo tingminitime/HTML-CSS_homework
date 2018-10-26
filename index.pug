@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title 六角學院 Hex School
+    link(rel="stylesheet", href="stylesheets/reset.css")
+    link(rel="stylesheet", href="stylesheets/all.css")
+    meta(name="description" content="六角學院，讓您奠定良好的前端基礎")
+  body
+    .wrap
+      .topbar
+        ul
+          li
+            a(href="#" target="_blank")
+              img(src="images/fb_icon.png")
+              span.facebook 粉絲團
+          li
+            a(href="#" target="_blank")
+              img(src="images/twitter_icon.png")
+              span.twitter 追隨我們
+        .clearfix
+      nav
+        h1
+          a(href="#") 六角學院
+        ul
+          li
+            a(href="#") 首頁
+          li
+            a(href="#") 產品介紹
+          li
+            a(href="#") 聯絡我們
+          .clearfix
+      header
+        .banner_text
+          h2 六角學院<br>讓您奠定良好的前端基礎
+      section#courses
+        ul
+          li
+            a(href="#" target="_blank")
+              .courses_images
+                img(src="images/HTML.png")
+              h3 HTML 5 基礎教學
+              p 主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+          li
+            a(href="#" target="_blank")
+              .courses_images
+                img(src="images/rwd.png")
+              h3 響應式網站設計
+              p 響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+          li
+            a(href="#" target="_blank")
+              .courses_images
+                img(src="images/jQuery.png")
+              h3 jQuery 實戰教學
+              p 本課程有以下特色
+                br
+                |．瞭解變數的使用方法
+                br
+                |．學習並操作DOM
+                br
+                |．學習基本數學運算方法
+                br
+                |．套件的操作及運用
+          .clearfix
+      section#compare
+        h2 線上及實體課程的差異
+        table
+          tr
+            th 項目
+            th Hex School 線上課程
+            th 一般線上課程
+            th 實體課程
+          tr
+            td.bold_text 費用
+            td.hex_color 較低
+            td.hex_color 較低
+            td 較高
+          tr
+            td.bold_text 學習效果
+            td 一般
+            td.hex_color 較低
+            td 很好
+          tr
+            td.bold_text Code review
+            td.hex_color 有
+            td 無
+            td 不一定
+          tr
+            td.bold_text 課程更新速度
+            td.hex_color 普通
+            td.hex_color 普通
+            td 較慢
+          tr
+            td.bold_text 多次複習
+            td.hex_color 可
+            td 可
+            td 不可
+          tr
+            td.bold_text 字幕
+            td.hex_color 有
+            td 不一定
+            td 板書
+      section#form
+        h2 對我們的課程有興趣嗎？
+           br
+           |歡迎留下您的資料
+        form(action="index.html")
+          textarea(name="opinion" rows="20" placeholder="歡迎留言給我們")
+          .input_area
+            label(for="input_name") 姓名
+            input#input_name(type="text" name="Name" placeholder="您的姓名")
+            label(for="input_tel") 電話
+            input#input_tel(type="tel" name="Tel" placeholder="您的電話")
+            label(for="input_mail") 信箱
+            input#input_mail(type="email" name="Mail" placeholder="E-mail")
+            input#input_btn(type="submit" value="送出")
+          .clearfix
+      footer
+        a(href="#")
+          h2 hex school
+          img(src="images/logo_grey.png")
+        ul
+          li
+            h4 聯絡我們：
+            h4 電話：
+          li
+            h4.pink hexschool@gmail.com
+            h4.pink 0999-123-456
+        .clearfix

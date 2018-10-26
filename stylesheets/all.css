@@ -1,0 +1,359 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 微軟正黑體; }
+
+.clearfix {
+  clear: both; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative; }
+
+.topbar {
+  background: #f6f6f6; }
+
+.topbar ul {
+  float: right;
+  padding: 10px 20px; }
+
+.topbar li {
+  float: left;
+  padding: 0 10px; }
+  .topbar li:nth-child(1) {
+    border-right: 2px solid #cccccc; }
+
+.topbar span {
+  margin-left: 5px;
+  vertical-align: middle;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.topbar img {
+  vertical-align: middle; }
+
+.topbar span.facebook {
+  color: #4460a0; }
+  .topbar span.facebook:hover {
+    color: #00cc99;
+    letter-spacing: 1px; }
+
+.topbar span.twitter {
+  color: #00aaec; }
+  .topbar span.twitter:hover {
+    color: #00cc99;
+    letter-spacing: 1px; }
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 8px 12px -6px rgba(128, 128, 128, 0.75);
+  box-shadow: 0px 8px 12px -6px rgba(128, 128, 128, 0.75);
+  position: relative; }
+
+nav h1 a {
+  display: block;
+  width: 174px;
+  height: 36px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+nav ul li {
+  float: left;
+  margin-left: 15px; }
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #00cc99;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center; }
+  nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 204, 153, 0.25);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: scale(0, 0.5);
+    -ms-transform: scale(0, 0.5);
+    transform: scale(0, 0.5);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  nav ul li a:hover {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    color: #009973; }
+    nav ul li a:hover:before {
+      background: #00cc99;
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1); }
+
+header .banner_text {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  line-height: 418px; }
+
+header h2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  height: auto;
+  line-height: 1.2;
+  cursor: context-menu;
+  padding: 30px 20px; }
+
+section#courses {
+  margin-top: 70px; }
+  section#courses ul li a {
+    width: 31.3333%;
+    float: left;
+    margin: 0 1%;
+    -webkit-box-shadow: 0px 3px 5px 1px #ddd;
+    box-shadow: 0px 3px 5px 1px #ddd;
+    padding: 20px 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    section#courses ul li a:before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background: rgba(0, 204, 153, 0);
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translate(-50%, -25%) scale(0.1, 0.1);
+      -ms-transform: translate(-50%, -25%) scale(0.1, 0.1);
+      transform: translate(-50%, -25%) scale(0.1, 0.1);
+      border-radius: 50%;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      z-index: 2; }
+    section#courses ul li a:hover {
+      -webkit-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05); }
+      section#courses ul li a:hover h3 {
+        color: white; }
+      section#courses ul li a:hover p {
+        color: white;
+        font-weight: bold; }
+      section#courses ul li a:hover:before {
+        background: #00cc99;
+        -webkit-transform: translate(-50%, -100%) scale(6, 6);
+        -ms-transform: translate(-50%, -100%) scale(6, 6);
+        transform: translate(-50%, -100%) scale(6, 6); }
+  section#courses ul li a .courses_images {
+    display: block;
+    line-height: 150px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    position: relative;
+    z-index: 4; }
+  section#courses ul li a .courses_images img {
+    vertical-align: middle; }
+  section#courses ul li a h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 4;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+  section#courses ul li p {
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+    padding: 0 10px;
+    position: relative;
+    z-index: 4;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+
+section#compare {
+  margin-top: 70px; }
+  section#compare h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px; }
+  section#compare table {
+    margin: 0 auto; }
+  section#compare table .hex_color {
+    color: #00cc99;
+    font-weight: bold; }
+  section#compare table .bold_text {
+    font-weight: bold; }
+  section#compare table th, section#compare table td {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    padding: 15px 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; }
+  section#compare table th {
+    font-weight: bold;
+    background: #eee; }
+
+section#form {
+  margin-top: 70px;
+  padding: 30px 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00644b), to(#009872));
+  background-image: -webkit-linear-gradient(#00644b, #009872);
+  background-image: -o-linear-gradient(#00644b, #009872);
+  background-image: linear-gradient(#00644b, #009872); }
+  section#form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.5; }
+  section#form form textarea {
+    font-family: 微軟正黑體;
+    line-height: 1;
+    resize: none;
+    float: left;
+    width: 47%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; }
+    section#form form textarea::-webkit-input-placeholder {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ccc;
+      letter-spacing: 1px; }
+    section#form form textarea:-ms-input-placeholder {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ccc;
+      letter-spacing: 1px; }
+    section#form form textarea::-ms-input-placeholder {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ccc;
+      letter-spacing: 1px; }
+    section#form form textarea::placeholder {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ccc;
+      letter-spacing: 1px; }
+  section#form .input_area {
+    float: right;
+    width: 48%; }
+  section#form .input_area label {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer; }
+  section#form .input_area input {
+    font-family: 微軟正黑體; }
+  section#form #input_name, section#form #input_tel, section#form #input_mail {
+    padding: 8px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-size: 18px; }
+    section#form #input_name::-webkit-input-placeholder, section#form #input_tel::-webkit-input-placeholder, section#form #input_mail::-webkit-input-placeholder {
+      color: #ccc;
+      letter-spacing: 1px; }
+    section#form #input_name:-ms-input-placeholder, section#form #input_tel:-ms-input-placeholder, section#form #input_mail:-ms-input-placeholder {
+      color: #ccc;
+      letter-spacing: 1px; }
+    section#form #input_name::-ms-input-placeholder, section#form #input_tel::-ms-input-placeholder, section#form #input_mail::-ms-input-placeholder {
+      color: #ccc;
+      letter-spacing: 1px; }
+    section#form #input_name::placeholder, section#form #input_tel::placeholder, section#form #input_mail::placeholder {
+      color: #ccc;
+      letter-spacing: 1px; }
+  section#form #input_btn {
+    float: right;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 1px;
+    background: #00cc99;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+    section#form #input_btn:hover {
+      background: #00d6a1;
+      font-weight: bold;
+      -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
+    section#form #input_btn:active {
+      -webkit-transform: translate(2%, 5%);
+      -ms-transform: translate(2%, 5%);
+      transform: translate(2%, 5%); }
+
+footer {
+  padding: 30px 20px; }
+  footer a {
+    float: left;
+    display: block; }
+  footer a h2 {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 0; }
+  footer ul {
+    float: right; }
+  footer ul li {
+    letter-spacing: 1px;
+    display: inline-block; }
+  footer ul li h4 {
+    margin-bottom: 5px; }
+  footer ul li .pink {
+    color: #e55995; }

@@ -1,0 +1,295 @@
+// --------reset-----------
+
+*,*:before,*:after
+  box-sizing: border-box
+body
+  font-family: 微軟正黑體
+.clearfix
+  clear: both
+a
+  text-decoration: none
+  color: black
+
+// ------mixin---------
+$hex_color: #00cc99
+$black_text: #333
+
+//-----view width-----
+.wrap
+  width: 1024px
+  margin: 0 auto
+  position: relative
+
+//-------topbar--------
+.topbar
+  background: #f6f6f6
+.topbar ul
+  float: right
+  padding: 10px 20px
+.topbar li
+  float: left
+  padding: 0 10px
+  &:nth-child(1)
+    border-right: 2px solid #cccccc
+.topbar span
+  margin-left: 5px
+  vertical-align: middle
+  transition: .2s
+.topbar img
+  vertical-align: middle
+.topbar span.facebook
+  color: #4460a0
+  &:hover
+    color: $hex_color
+    letter-spacing: 1px
+.topbar span.twitter
+  color: #00aaec
+  &:hover
+    color: $hex_color
+    letter-spacing: 1px
+
+//-------nav--------
+nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 20px
+  box-shadow: 0px 8px 12px -6px rgba(grey,.75)
+  position: relative
+nav h1 a
+  display: block
+  width: 174px
+  height: 36px
+  background-image: url('../images/logo.png')
+  background-repeat: no-repeat
+  text-indent: 101%
+  white-space: nowrap
+  overflow: hidden
+
+nav ul li
+  float: left
+  margin-left: 15px
+nav ul li a
+  display: block
+  padding: 10px
+  color: $hex_color
+  font-size: 18px
+  font-weight: bold
+  letter-spacing: 1px
+  position: relative
+  text-align: center
+  &:before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 4px
+    bottom: 0
+    left: 0
+    background: rgba($hex_color,.25)
+    transform-origin: left
+    transform: scale(0,.5)
+    transition: .3s
+  &:hover
+    transition: .5s
+    color: darken($hex_color,10)
+    &:before
+      background: rgba($hex_color,1)
+      transform: scale(1,1)
+
+//-------header--------
+header
+  .banner_text
+    background-image: url('../images/banner.png')
+    background-repeat: no-repeat
+    line-height: 418px
+  h2
+    display: inline-block
+    vertical-align: middle
+    width: 100%
+    background: rgba(#000,.25)
+    font-size: 36px
+    font-weight: bold
+    color: white
+    height: auto
+    line-height: 1.2
+    cursor: context-menu
+    padding: 30px 20px
+
+//-------courses--------
+section#courses
+  margin-top: 70px
+  ul li a
+    width: 31.3333%
+    float: left
+    margin: 0 1%
+    box-shadow: 0px 3px 5px 1px #ddd
+    padding: 20px 10px
+    border-radius: 5px
+    position: relative
+    overflow: hidden
+    transition: .3s
+    &:before
+      content: ""
+      width: 100px
+      height: 100px
+      position: absolute
+      background: rgba($hex_color,0)
+      left: 50%
+      bottom: 0
+      transform: translate(-50%,-25%) scale(.1,.1)
+      border-radius: 50%
+      transition: .4s
+      z-index: 2
+    &:hover
+      transform: scale(1.05,1.05)
+      h3
+        color: white
+      p
+        color: white
+        font-weight: bold
+      &:before
+        background: rgba($hex_color,1)
+        transform: translate(-50%,-100%) scale(6,6)
+  ul li a .courses_images
+    display: block
+    line-height: 150px
+    text-align: center
+    margin: 0 auto 10px auto
+    position: relative
+    z-index: 4
+  ul li a .courses_images img
+    vertical-align: middle
+  ul li a h3
+    text-align: center
+    font-size: 22px
+    font-weight: bold
+    color: $black_text
+    margin-bottom: 15px
+    position: relative
+    z-index: 4
+    transition: .5s
+  ul li p
+    line-height: 1.4
+    text-align: justify
+    font-size: 1rem
+    color: $black_text
+    padding: 0 10px
+    position: relative
+    z-index: 4
+    transition: .5s
+    
+
+//-------compare--------
+section#compare
+  margin-top: 70px
+  h2
+    font-size: 28px
+    font-weight: bold
+    text-align: center
+    margin-bottom: 30px
+  table
+    margin: 0 auto
+  table .hex_color
+    color: #00cc99
+    font-weight: bold
+  table .bold_text
+    font-weight: bold
+  table th, table td
+    font-size: 18px
+    color: $black_text
+    text-align: left
+    padding: 15px 50px
+    border-top: 1px solid #ddd
+    border-bottom: 1px solid #ddd
+  table th
+    font-weight: bold
+    background: #eee
+
+//-------form--------
+section#form
+  margin-top: 70px
+  padding: 30px 20px
+  background-image: linear-gradient(#00644b,#009872)
+  h2
+    font-size: 28px
+    font-weight: bold
+    text-align: center
+    color: white
+    margin-bottom: 30px
+    line-height: 1.5
+  form textarea
+    font-family: 微軟正黑體
+    line-height: 1
+    resize: none
+    float: left
+    width: 47%
+    padding: 10px
+    border: none
+    border-radius: 5px
+    &::placeholder
+      font-size: 22px
+      font-weight: bold
+      color: #ccc
+      letter-spacing: 1px
+
+  .input_area
+    float: right
+    width: 48%
+  .input_area label
+    display: inline-block
+    color: white
+    font-weight: bold
+    margin-bottom: 5px
+    cursor: pointer
+  .input_area input
+    font-family: 微軟正黑體
+  #input_name, #input_tel, #input_mail
+    padding: 8px 10px
+    display: block
+    width: 100%
+    border: none
+    border-radius: 3px
+    margin-bottom: 15px
+    font-size: 18px
+    &::placeholder
+      color: #ccc
+      letter-spacing: 1px
+  #input_btn
+    float: right
+    font-size: 1rem
+    color: white
+    letter-spacing: 1px
+    background: $hex_color
+    border: none
+    border-radius: 5px
+    padding: 8px 20px
+    margin-top: 15px
+    cursor: pointer
+    transition: .2s
+    &:hover
+      background: lighten($hex_color,2)
+      font-weight: bold
+      transform: scale(1.1,1.1)
+    &:active
+      transform: translate(2%,5%)
+    
+//-------footer--------
+footer
+  padding: 30px 20px
+  a
+    float: left
+    display: block
+  a h2
+    text-indent: 101%
+    white-space: nowrap
+    overflow: hidden
+    line-height: 0
+  ul
+    float: right
+  ul li
+    letter-spacing: 1px
+    display: inline-block
+  ul li h4
+    margin-bottom: 5px
+  ul li .pink
+    color: #e55995
