@@ -137,9 +137,9 @@ header h2 {
   cursor: context-menu;
   padding: 30px 20px; }
 
-section#courses {
+section.courses {
   margin-top: 70px; }
-  section#courses ul li a {
+  section.courses ul li a {
     width: 31.3333%;
     float: left;
     margin: 0 1%;
@@ -152,7 +152,7 @@ section#courses {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
-    section#courses ul li a:before {
+    section.courses ul li a:before {
       content: "";
       width: 100px;
       height: 100px;
@@ -168,30 +168,30 @@ section#courses {
       -o-transition: .4s;
       transition: .4s;
       z-index: 2; }
-    section#courses ul li a:hover {
+    section.courses ul li a:hover {
       -webkit-transform: scale(1.05, 1.05);
       -ms-transform: scale(1.05, 1.05);
       transform: scale(1.05, 1.05); }
-      section#courses ul li a:hover h3 {
+      section.courses ul li a:hover h3 {
         color: white; }
-      section#courses ul li a:hover p {
+      section.courses ul li a:hover p {
         color: white;
         font-weight: bold; }
-      section#courses ul li a:hover:before {
+      section.courses ul li a:hover:before {
         background: #00cc99;
         -webkit-transform: translate(-50%, -100%) scale(6, 6);
         -ms-transform: translate(-50%, -100%) scale(6, 6);
         transform: translate(-50%, -100%) scale(6, 6); }
-  section#courses ul li a .courses_images {
+  section.courses ul li a .courses_images {
     display: block;
     line-height: 150px;
     text-align: center;
     margin: 0 auto 10px auto;
     position: relative;
     z-index: 4; }
-  section#courses ul li a .courses_images img {
+  section.courses ul li a .courses_images img {
     vertical-align: middle; }
-  section#courses ul li a h3 {
+  section.courses ul li a h3 {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -202,7 +202,7 @@ section#courses {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
-  section#courses ul li p {
+  section.courses ul li p {
     line-height: 1.4;
     text-align: justify;
     font-size: 1rem;
@@ -214,46 +214,46 @@ section#courses {
     -o-transition: .5s;
     transition: .5s; }
 
-section#compare {
+section.compare {
   margin-top: 70px; }
-  section#compare h2 {
+  section.compare h2 {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px; }
-  section#compare table {
+  section.compare table {
     margin: 0 auto; }
-  section#compare table .hex_color {
+  section.compare table .hex_color {
     color: #00cc99;
     font-weight: bold; }
-  section#compare table .bold_text {
+  section.compare table .bold_text {
     font-weight: bold; }
-  section#compare table th, section#compare table td {
+  section.compare table th, section.compare table td {
     font-size: 18px;
     color: #333;
     text-align: left;
     padding: 15px 50px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd; }
-  section#compare table th {
+  section.compare table th {
     font-weight: bold;
     background: #eee; }
 
-section#form {
+section.form {
   margin-top: 70px;
   padding: 30px 20px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00644b), to(#009872));
   background-image: -webkit-linear-gradient(#00644b, #009872);
   background-image: -o-linear-gradient(#00644b, #009872);
   background-image: linear-gradient(#00644b, #009872); }
-  section#form h2 {
+  section.form h2 {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
     color: white;
     margin-bottom: 30px;
     line-height: 1.5; }
-  section#form form textarea {
+  section.form form textarea {
     font-family: 微軟正黑體;
     line-height: 1;
     resize: none;
@@ -262,38 +262,38 @@ section#form {
     padding: 10px;
     border: none;
     border-radius: 5px; }
-    section#form form textarea::-webkit-input-placeholder {
+    section.form form textarea::-webkit-input-placeholder {
       font-size: 22px;
       font-weight: bold;
       color: #ccc;
       letter-spacing: 1px; }
-    section#form form textarea:-ms-input-placeholder {
+    section.form form textarea:-ms-input-placeholder {
       font-size: 22px;
       font-weight: bold;
       color: #ccc;
       letter-spacing: 1px; }
-    section#form form textarea::-ms-input-placeholder {
+    section.form form textarea::-ms-input-placeholder {
       font-size: 22px;
       font-weight: bold;
       color: #ccc;
       letter-spacing: 1px; }
-    section#form form textarea::placeholder {
+    section.form form textarea::placeholder {
       font-size: 22px;
       font-weight: bold;
       color: #ccc;
       letter-spacing: 1px; }
-  section#form .input_area {
+  section.form .input_area {
     float: right;
     width: 48%; }
-  section#form .input_area label {
+  section.form .input_area label {
     display: inline-block;
     color: white;
     font-weight: bold;
     margin-bottom: 5px;
     cursor: pointer; }
-  section#form .input_area input {
+  section.form .input_area input {
     font-family: 微軟正黑體; }
-  section#form #input_name, section#form #input_tel, section#form #input_mail {
+  section.form #input_name, section.form #input_tel, section.form #input_mail {
     padding: 8px 10px;
     display: block;
     width: 100%;
@@ -301,19 +301,19 @@ section#form {
     border-radius: 3px;
     margin-bottom: 15px;
     font-size: 18px; }
-    section#form #input_name::-webkit-input-placeholder, section#form #input_tel::-webkit-input-placeholder, section#form #input_mail::-webkit-input-placeholder {
+    section.form #input_name::-webkit-input-placeholder, section.form #input_tel::-webkit-input-placeholder, section.form #input_mail::-webkit-input-placeholder {
       color: #ccc;
       letter-spacing: 1px; }
-    section#form #input_name:-ms-input-placeholder, section#form #input_tel:-ms-input-placeholder, section#form #input_mail:-ms-input-placeholder {
+    section.form #input_name:-ms-input-placeholder, section.form #input_tel:-ms-input-placeholder, section.form #input_mail:-ms-input-placeholder {
       color: #ccc;
       letter-spacing: 1px; }
-    section#form #input_name::-ms-input-placeholder, section#form #input_tel::-ms-input-placeholder, section#form #input_mail::-ms-input-placeholder {
+    section.form #input_name::-ms-input-placeholder, section.form #input_tel::-ms-input-placeholder, section.form #input_mail::-ms-input-placeholder {
       color: #ccc;
       letter-spacing: 1px; }
-    section#form #input_name::placeholder, section#form #input_tel::placeholder, section#form #input_mail::placeholder {
+    section.form #input_name::placeholder, section.form #input_tel::placeholder, section.form #input_mail::placeholder {
       color: #ccc;
       letter-spacing: 1px; }
-  section#form #input_btn {
+  section.form #input_btn {
     float: right;
     font-size: 1rem;
     color: white;
@@ -327,13 +327,13 @@ section#form {
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s; }
-    section#form #input_btn:hover {
+    section.form #input_btn:hover {
       background: #00d6a1;
       font-weight: bold;
       -webkit-transform: scale(1.1, 1.1);
       -ms-transform: scale(1.1, 1.1);
       transform: scale(1.1, 1.1); }
-    section#form #input_btn:active {
+    section.form #input_btn:active {
       -webkit-transform: translate(2%, 5%);
       -ms-transform: translate(2%, 5%);
       transform: translate(2%, 5%); }
@@ -351,9 +351,13 @@ footer {
   footer ul {
     float: right; }
   footer ul li {
-    letter-spacing: 1px;
-    display: inline-block; }
+    letter-spacing: 1px; }
   footer ul li h4 {
     margin-bottom: 5px; }
-  footer ul li .pink {
-    color: #e55995; }
+  footer ul li span {
+    display: inline-block;
+    width: 90px;
+    text-align: right; }
+  footer ul li span.pink {
+    color: #e55995;
+    width: auto; }

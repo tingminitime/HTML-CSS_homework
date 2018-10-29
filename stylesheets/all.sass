@@ -116,7 +116,7 @@ header
     padding: 30px 20px
 
 //-------courses--------
-section#courses
+section.courses
   margin-top: 70px
   ul li a
     width: 31.3333%
@@ -180,7 +180,7 @@ section#courses
     
 
 //-------compare--------
-section#compare
+section.compare
   margin-top: 70px
   h2
     font-size: 28px
@@ -206,7 +206,7 @@ section#compare
     background: #eee
 
 //-------form--------
-section#form
+section.form
   margin-top: 70px
   padding: 30px 20px
   background-image: linear-gradient(#00644b,#009872)
@@ -288,8 +288,12 @@ footer
     float: right
   ul li
     letter-spacing: 1px
-    display: inline-block
   ul li h4
     margin-bottom: 5px
-  ul li .pink
+  ul li span
+    display: inline-block
+    width: 90px
+    text-align: right
+  ul li span.pink
     color: #e55995
+    width: auto
